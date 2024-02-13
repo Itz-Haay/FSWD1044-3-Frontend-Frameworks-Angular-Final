@@ -4,5 +4,8 @@
   </header>
   <section>
     <h2>Featured Products</h2>
-    <!-- Display featured products -->
+    <div *ngFor="let item of featuredItems" class="featured-items">
+    <h3>{{item.name}}</h3>
+    <p>{{item.price}}</p>
+    </div>
   </section>

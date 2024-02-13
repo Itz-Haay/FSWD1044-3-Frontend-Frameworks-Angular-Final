@@ -1,1 +1,13 @@
-<p>products works!</p>
+<h1>Full List of Products</h1>
+<section *ngFor="let card of cardList">
+    <div class="productlist">
+        <h3 [routerLink]='["/products", card.id]'>{{ card.name }}</h3>
+        <img [src]="card.imageUrl" alt="{{card.name}}">
+    
+    <p>Price: ${{ card.price }}</p>
+    <!-- <button (click)="viewItem(card.id)">View</button>
+    <button (click)="editItem(card.id)">Edit</button>
+    <button (click)="deleteItem(card.id)">Delete</button> -->
+  </div>
+
+</section>
