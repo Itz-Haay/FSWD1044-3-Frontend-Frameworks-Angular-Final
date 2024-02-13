@@ -7,7 +7,11 @@ import { Card } from '../models/card';
   providedIn: 'root'
 })
 export class CardService {
+
+
   datasource: string = "http://localhost:3000/cards"
+
+  constructor(private http: HttpClient) { }
 
   getAllCards(): Observable<Card[]>{
     return this.http.get<Card[]>(this.datasource);
@@ -21,13 +25,12 @@ export class CardService {
     return this.http.post<Card>(this.datasource, newCard);
   }
 
-  editContactById(id: number, editCard: Card): Observable<Card> {
+  editCardById(id: number, editCard: Card): Observable<Card> {
     return this.http.put<Card>(this.datasource + "/" + id, editCard);
   }
 
-  deleteContactById(id: number): Observable<Card>{
+  deleteCardById(id: number): Observable<Card>{
     return this.http.delete<any>(this.datasource + "/" + id);
   }
 
-  constructor(private http: HttpClient) { }
 }

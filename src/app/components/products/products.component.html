@@ -1,13 +1,15 @@
 <h1>Full List of Products</h1>
+<h4>Click on the Cards or their Title for more details, Click Add Card to add your own Card</h4>
+<button (click)="addCard()">Add Card</button>
+<br><br><br>
 <section *ngFor="let card of cardList">
     <div class="productlist">
         <h3 [routerLink]='["/products", card.id]'>{{ card.name }}</h3>
-        <img [src]="card.imageUrl" alt="{{card.name}}">
+        <img [src]="card.imageUrl" alt="{{card.name}}" (click)="viewCard(card.id)">
     
     <p>Price: ${{ card.price }}</p>
-    <!-- <button (click)="viewItem(card.id)">View</button>
-    <button (click)="editItem(card.id)">Edit</button>
-    <button (click)="deleteItem(card.id)">Delete</button> -->
+    <button (click)="editCard(card.id)">Edit</button>
+    <button (click)="deleteCard(card.id)">Delete</button>
   </div>
 
 </section>
