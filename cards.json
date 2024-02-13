@@ -1,0 +1,40 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "name": "Delver of Secrets // Insectile Aberration",
+            "cmc": 1,
+            "imageUrl": "https://cards.scryfall.io/small/front/8/8/888fbfaf-dbf9-4045-a79e-d436ef75b3cf.jpg?1692649173",
+            "price": 4.25,
+            "flavorText": "Now insects occupy a special place in his lungs, intestines, liver, kidneys, eyeballs...",
+            "rarity": "rare"
+        },
+        {
+            "id": 2,
+            "name": "Terminate",
+            "cmc": 3,
+            "imageUrl": "https://cards.scryfall.io/small/front/8/a/8af2d815-d8b2-42ff-9889-acbe77a42583.jpg?1593814672",
+            "price": 0.49,
+            "flavorText": "All suns must set.",
+            "rarity": "uncommon"
+        },
+        {
+            "id": 3,
+            "name": "Holy Day",
+            "cmc": 1,
+            "imageUrl": "https://cards.scryfall.io/small/front/8/a/8af2d815-d8b2-42ff-9889-acbe77a42583.jpg?1593814672",
+            "price": 4.73,
+            "flavorText": "Will history remember this as the day demons arrived or the day saviors arrived?",
+            "rarity": "common"
+        },
+        {
+            "id": 4,
+            "name": "Toshiro Umezawa",
+            "cmc": 3,
+            "imageUrl": "https://cards.scryfall.io/small/front/b/b/bb8da57c-88ff-4fea-b19e-856a4c89cb8e.jpg?1682694452",
+            "price": 0.45,
+            "flavorText": "Though only looking out for himself, Toshiro ended up saving all of Kamigawa.",
+            "rarity": "rare"
+        }
+    ]
+}
