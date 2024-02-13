@@ -1,1 +1,26 @@
-<router-outlet></router-outlet>
+<mat-drawer-container class="example-container">
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/products">Products</a></li>
+
+    </mat-drawer>
+
+
+    <mat-toolbar>
+        <button mat-icon-button class="menuButton" aria-label="menu" (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>Haay's Wares</span>
+        <span class="spacer"></span>
+        <button mat-icon-button class="homeButton" aria-label="home">
+            <mat-icon fontIcon="home" routerLink="/home"></mat-icon>
+        </button>
+    </mat-toolbar>
+
+
+
+
+
+    <router-outlet></router-outlet>
+</mat-drawer-container>
