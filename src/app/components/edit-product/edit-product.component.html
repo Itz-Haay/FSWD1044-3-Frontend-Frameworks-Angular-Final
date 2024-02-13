@@ -1,1 +1,13 @@
-<p>edit-product works!</p>
+<h1>Edit Contact</h1>
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+  <label>Contact Name</label>
+  <input type="text" name="name" [(ngModel)]="currentCard.name">
+
+  <label>Contact Email</label>
+  <input type="text" name="email" [(ngModel)]="currentCard.rarity">
+
+  <label>Contact Name</label>
+  <input type="text" name="phone" [(ngModel)]="currentCard.price">
+
+  <button type="submit">EDIT CONTACT</button>
+</form>
