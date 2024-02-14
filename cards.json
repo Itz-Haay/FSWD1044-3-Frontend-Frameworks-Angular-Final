@@ -1,11 +1,11 @@
 {
   "cards": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Delver of Secrets // Insectile Aberration",
       "cmc": 1,
       "imageUrl": "https://cards.scryfall.io/small/front/8/8/888fbfaf-dbf9-4045-a79e-d436ef75b3cf.jpg?1692649173",
-      "price": 4.25,
+      "price": 4.35,
       "flavorText": "Now insects occupy a special place in his lungs, intestines, liver, kidneys, eyeballs...",
       "rarity": "rare"
     },
@@ -35,6 +35,15 @@
       "price": 0.45,
       "flavorText": "Though only looking out for himself, Toshiro ended up saving all of Kamigawa.",
       "rarity": "rare"
+    },
+    {
+      "id": 5,
+      "name": "David John Hay",
+      "cmc": 0,
+      "imageUrl": "",
+      "price": 0,
+      "flavorText": "Behold My Glory",
+      "rarity": "uncommon"
     }
   ]
 }

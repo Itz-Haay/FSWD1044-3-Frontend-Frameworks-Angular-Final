@@ -29,7 +29,7 @@ export class EditProductComponent implements OnInit {
   onSubmit() {
     this.cardService.editCardById(this.id, this.currentCard).subscribe(edittedCard => {
       console.log(edittedCard);
-      this.router.navigateByUrl("/cards");
+      this.router.navigateByUrl("/products");
     })
   }
 }

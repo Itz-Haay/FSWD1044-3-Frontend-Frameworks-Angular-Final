@@ -1,1 +1,15 @@
-<p>add-product works!</p>
+<h1>Add your Own Card</h1>
+<form #form="ngForm" (ngSubmit)="onSubmit()">
+    <label>What is the name of your card?</label>
+    <input type="text" name="name" [(ngModel)]="newCard.name">
+    <label>What is the CMC of your card?</label>
+    <input type="text" name="cmc" [(ngModel)]="newCard.cmc">
+    <label>What is the value of your card?</label>
+    <input type="number" name="price" [(ngModel)]="newCard.price">
+    <label>What is the rarity of your card?</label>
+    <input type="text" name="rarity" [(ngModel)]="newCard.rarity">
+    <label>Now add some flavortext to the Card</label>
+    <input type="text" name="flavorText" [(ngModel)]="newCard.flavorText">
+    <label>Now finally, add the image URL of the card</label>
+    <input type="text" name="image" [(ngModel)]="newCard.imageUrl">
+    <button type="submit">Add Card</button>
