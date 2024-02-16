@@ -1,5 +1,5 @@
 export class Card {
-    id: number = 0;
+    id: any = 0;
     name: string = '';
     cmc: number = 0;
     imageUrl: string = '';

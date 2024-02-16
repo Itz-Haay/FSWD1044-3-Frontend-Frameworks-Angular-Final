@@ -13,6 +13,10 @@
         </button>
         <span>Haay's Wares</span>
         <span class="spacer"></span>
+        <span>
+            <input type="text" [(ngModel)]="searchKeyword" placeholder="Search For A Card...">
+            <button (click)="searchProducts()">Search</button>
+        </span>
         <button mat-icon-button class="homeButton" aria-label="home">
             <mat-icon fontIcon="home" routerLink="/home"></mat-icon>
         </button>

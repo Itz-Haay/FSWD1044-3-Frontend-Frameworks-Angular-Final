@@ -1,11 +1,12 @@
 <header>
-    <img class="logo" src="..\assets\LOGO.jpg" alt="Logo">
-    <h1>Welcome to Haay's Wares</h1>
-  </header>
-  <section>
-    <h2>Featured Products</h2>
-    <div *ngFor="let item of featuredItems" class="featured-items">
+  <img class="logo" src="..\assets\LOGO.jpg" alt="Logo">
+  <h1 class="titleMessage">Welcome to Haay's Wares</h1>
+</header>
+<section>
+  <h2>Featured Products</h2>
+  <div *ngFor="let item of featuredItems" class="featured-items">
     <h3>{{item.name}}</h3>
+    <img src="{{item.imageUrl}}" alt="{{item.name}}">
     <p>{{item.price}}</p>
-    </div>
-  </section>
+  </div>
+</section>
