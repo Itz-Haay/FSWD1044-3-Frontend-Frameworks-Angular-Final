@@ -6,7 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-search-results',
   templateUrl: './search-results.component.html',
-  styleUrl: './search-results.component.css'
+  styleUrls: ['./search-results.component.css']
 })
 export class SearchResultsComponent implements OnInit{
   searchKeyword: string = '';
@@ -16,7 +16,7 @@ export class SearchResultsComponent implements OnInit{
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(param => {
-      this.searchKeyword = param.get('keyword') || '';
+      this.searchKeyword = param.get('name') || '';
       this.searchProducts(this.searchKeyword);
     })    
   }
@@ -28,6 +28,12 @@ export class SearchResultsComponent implements OnInit{
         console.log(this.searchResults);
       })
     }
+  }
+
+  searchCards() {
+    this.cardService.searchProducts(this.searchKeyword).subscribe(results => {
+      this.searchResults = results;
+    })
   }
 
 }

@@ -13,8 +13,8 @@ export class CardService {
 
   constructor(private http: HttpClient) { }
 
-  getAllCards(): Observable<Card[]>{
-    return this.http.get<Card[]>(this.datasource);
+  getAllCards(url?: string): Observable<Card[]>{
+    return this.http.get<Card[]>(url || this.datasource);
   }
 
   getCardById(id: number): Observable<Card> {
