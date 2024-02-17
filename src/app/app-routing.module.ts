@@ -16,6 +16,7 @@ const routes: Routes = [
   { path: 'add', component: AddProductComponent},
   { path: 'edit/:id', component: EditProductComponent},
   { path: 'search-results/:keyword', component: SearchResultsComponent},
+  { path: 'search', component: SearchResultsComponent},
   { path: '', component: HomeComponent}
 ];
 

@@ -18,6 +18,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatCardModule } from '@angular/material/card';
 import { SearchResultsComponent } from './components/search-results/search-results.component';
 
 
@@ -39,6 +40,7 @@ import { SearchResultsComponent } from './components/search-results/search-resul
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
+    MatCardModule,
     FormsModule
   ],
   providers: [

@@ -3,6 +3,7 @@ import { Card } from '../../models/card';
 import { CardService } from '../../services/card.service';
 import { ActivatedRoute } from '@angular/router';
 
+
 @Component({
   selector: 'app-search-results',
   templateUrl: './search-results.component.html',
@@ -15,25 +16,23 @@ export class SearchResultsComponent implements OnInit{
   constructor(private cardService: CardService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(param => {
-      this.searchKeyword = param.get('name') || '';
-      this.searchProducts(this.searchKeyword);
-    })    
+    this.getCards()
   }
 
-  searchProducts(keyword: string) {
-    if (keyword.trim() !== '') {
-      this.cardService.searchProducts(keyword).subscribe(result => {
-        this.searchResults = result;
-        console.log(this.searchResults);
-      })
-    }
-  }
-
-  searchCards() {
-    this.cardService.searchProducts(this.searchKeyword).subscribe(results => {
-      this.searchResults = results;
+  getCards() {
+    this.cardService.getAllCards().subscribe(allCards => {
+      this.searchResults = allCards
     })
   }
+
+  search(keyword: string): void {
+    this.cardService.searchProducts(keyword).subscribe(data =>{
+      this.searchResults = data;
+      console.log(data);
+    })
+
+  }
+
+
 
 }

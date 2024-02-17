@@ -35,6 +35,33 @@
       "price": 0.45,
       "flavorText": "Though only looking out for himself, Toshiro ended up saving all of Kamigawa.",
       "rarity": "rare"
+    },
+    {
+      "id": "5",
+      "name": "Pyrokinesis",
+      "cmc": "6",
+      "imageUrl": "https://cards.scryfall.io/small/front/6/2/62c403ad-e550-4f5d-afd8-d8393731fa9c.jpg?1592751965",
+      "price": 1,
+      "flavorText": "",
+      "rarity": "uncommon"
+    },
+    {
+      "id": "6",
+      "name": "Contortionist Troupe",
+      "cmc": "1",
+      "imageUrl": "https://cards.scryfall.io/small/front/c/8/c81da535-04e4-4dc8-9e12-7b417aba2f39.jpg?1636224116",
+      "price": 0.07,
+      "flavorText": "Welcome to the greatest show in Kessig!",
+      "rarity": "uncommon"
+    },
+    {
+      "id": "7",
+      "name": "Adeline, Resplendent Cathar",
+      "cmc": "3",
+      "imageUrl": "https://cards.scryfall.io/small/front/1/8/18092f68-b96e-4084-9eba-b240d2195d81.jpg?1634346539",
+      "price": 9.06,
+      "flavorText": "",
+      "rarity": "rare"
     }
   ]
 }
