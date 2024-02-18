@@ -17,3 +17,13 @@
     background-color: #f5ebe0;
     width: 105px;
 }
+.links {
+    margin: 3px 2px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #5e503f;
+}
+.link {
+    color: #ccc;
+    margin-top: 3px;
+}
