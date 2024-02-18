@@ -1,7 +1,10 @@
 <section class="container">
   <h1>Full List of Products</h1>
-  <h4>Click on the Cards or their Title for more details, Click Add Card to add your own Card</h4>
-  <button (click)="addCard()">Add Card</button>
+  <h4>Click on the Cards for more details</h4>
+  <div class="buttons">
+  <button (click)="addCard()">Add a Card</button>
+  <button [routerLink]="['/search']">Search For a Card</button>
+</div>
   <br><br><br>
 
 
@@ -9,10 +12,11 @@
     <mat-card *ngFor="let card of cardList" class="card-inner">
       <h3 [routerLink]='["/products", card.id]'>{{ card.name }}</h3>
       <img [src]="card.imageUrl" alt="{{card.name}}" (click)="viewCard(card.id)">
-
       <p>Price: ${{ card.price }}</p>
-      <button (click)="editCard(card.id)">Edit</button>
-      <button (click)="deleteCard(card.id)">Delete</button>
+      <div class="buttons">
+        <button (click)="editCard(card.id)">Edit</button>
+        <button (click)="deleteCard(card.id)">Delete</button>
+      </div>
     </mat-card>
   </div>
 
