@@ -1,10 +1,15 @@
 <h1>{{currentCard.name}}</h1>
 <div>
-    <img src='{{currentCard.imageUrl}}'>
-    <p>{{currentCard.name}}</p>
-    <p>Converted Mana Cost: {{currentCard.cmc}}</p>
-    <p>Flavor Text: {{currentCard.flavorText}}</p>
-    <p>Rarity: {{currentCard.rarity}}</p>
-    <p>Price: ${{currentCard.price}}</p>
-    
+    <mat-card class="cardinfo">
+        <p>{{currentCard.name}}</p>
+
+        <img src='{{currentCard.imageUrl}}' id="image">
+        <br>
+        <p>Converted Mana Cost: {{currentCard.cmc}}</p>
+        <p>Flavor Text: {{currentCard.flavorText}}</p>
+        <p>Rarity: {{currentCard.rarity}}</p>
+        <p>Price: ${{currentCard.price}}</p>
+        <button (click)="editCard(currentCard.id)">Edit Card</button>
+
+    </mat-card>
 </div>

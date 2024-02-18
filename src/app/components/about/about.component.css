@@ -1,0 +1,18 @@
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    max-width: 30%;
+    margin-right: 25px;
+    background-color: #edede9;
+    border: solid #d6ccc2;    
+    border-radius: 10px;
+    margin: 25px;
+    padding: 10px;
+}
+
+.cardImg{
+    max-width: 50%;
+}

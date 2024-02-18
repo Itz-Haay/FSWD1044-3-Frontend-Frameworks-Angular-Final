@@ -5,3 +5,15 @@
 .spacer {
     flex: 1 1 auto;
 }
+
+.container {
+    background-color: #d5bdaf;
+
+}
+.toolbar {
+    background-color: #e3d5ca;
+}
+.sidenav {
+    background-color: #f5ebe0;
+    width: 105px;
+}

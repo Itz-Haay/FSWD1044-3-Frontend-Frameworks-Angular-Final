@@ -1,27 +1,36 @@
-<h1>Add your Own Card</h1>
-<form #form="ngForm" (ngSubmit)="onSubmit()">
-    <label>What is the name of your card?</label>
-    <input type="text" name="name" [(ngModel)]="newCard.name">
-    <br>
-
-    <label>What is the CMC of your card?</label>
-    <input type="text" name="cmc" [(ngModel)]="newCard.cmc">
-    <br>
-
-    <label>What is the value of your card?</label>
-    <input type="number" name="price" [(ngModel)]="newCard.price">
-    <br>
-
-    <label>What is the rarity of your card?</label>
-    <input type="text" name="rarity" [(ngModel)]="newCard.rarity">
-    <br>
-
-    <label>Now add some flavortext to the Card</label>
-    <input type="text" name="flavorText" [(ngModel)]="newCard.flavorText">
-    <br>
-
-    <label>Now finally, add the image URL of the card</label>
-    <input type="text" name="image" [(ngModel)]="newCard.imageUrl">
-    <br>
-    
-    <button type="submit">Add Card</button>
+<div class="add-card-container">
+    <h1>Add your Own Card</h1>
+    <form #form="ngForm" (ngSubmit)="onSubmit()" class="card-form">
+      <div class="form-group">
+        <label for="name">Name of your card:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="newCard.name" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="cmc">CMC of your card:</label>
+        <input type="text" id="cmc" name="cmc" [(ngModel)]="newCard.cmc">
+      </div>
+  
+      <div class="form-group">
+        <label for="price">Value of your card:</label>
+        <input type="number" id="price" name="price" [(ngModel)]="newCard.price">
+      </div>
+  
+      <div class="form-group">
+        <label for="rarity">Rarity of your card:</label>
+        <input type="text" id="rarity" name="rarity" [(ngModel)]="newCard.rarity">
+      </div>
+  
+      <div class="form-group">
+        <label for="flavorText">Flavortext for the card:</label>
+        <input type="text" id="flavorText" name="flavorText" [(ngModel)]="newCard.flavorText">
+      </div>
+  
+      <div class="form-group">
+        <label for="image">Image URL of the card:</label>
+        <input type="text" id="image" name="image" [(ngModel)]="newCard.imageUrl">
+      </div>
+  
+      <button type="submit">Add Card</button>
+    </form>
+  </div>

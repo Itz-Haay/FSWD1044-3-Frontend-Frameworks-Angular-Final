@@ -1,12 +1,18 @@
-<header>
-  <img class="logo" src="..\assets\LOGO.jpg" alt="Logo">
-  <h1 class="titleMessage">Welcome to Haay's Wares</h1>
-</header>
-<section>
-  <h2>Featured Products</h2>
-  <div *ngFor="let item of featuredItems" class="featured-items">
-    <h3>{{item.name}}</h3>
-    <img src="{{item.imageUrl}}" alt="{{item.name}}">
-    <p>{{item.price}}</p>
+<div class="header-container">
+  <header>
+    <img class="logo" src="..\assets\LOGO.jpg" alt="Logo">
+    <h1 class="titleMessage">Welcome to Haay's Wares</h1>
+  </header>
+</div>
+<section class="featured-section">
+  <h2 class="featured-title">Featured Products</h2>
+  <div class="featured-grid">
+    <div *ngFor="let item of featuredItems" class="featured-items" [routerLink]='["/products", item.id]'>
+      <h3>{{item.name}}</h3>
+      <img src="{{item.imageUrl}}" alt="{{item.name}}">
+      <br>
+      <p>${{item.price}}</p>
+    </div>
   </div>
+  <div class="allproducts" [routerLink]='["/products"]'>View All Products</div>
 </section>

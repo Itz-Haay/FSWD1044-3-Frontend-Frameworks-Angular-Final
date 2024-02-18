@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Card } from '../../models/card';
 import { CardService } from '../../services/card.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-details',
@@ -13,7 +13,7 @@ export class ProductDetailsComponent implements OnInit {
 
   currentCard: Card = new Card();
 
-  constructor(private cardService: CardService, private actRoute: ActivatedRoute) {}
+  constructor(private cardService: CardService, private actRoute: ActivatedRoute, private router: Router) {}
 
 
   ngOnInit(): void {
@@ -24,4 +24,9 @@ export class ProductDetailsComponent implements OnInit {
       this.currentCard = foundCard;
     });
   }
+
+  editCard(cardId: number) {
+    this.router.navigate(['/edit', cardId])
+  }
+
 }
